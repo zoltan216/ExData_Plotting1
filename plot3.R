@@ -14,8 +14,8 @@ plot(s$DateTime, s$Sub_metering_1, yaxt="n", ylab="Energy Sub metering",type="l"
 lines(s$DateTime, s$Sub_metering_2, col="red")
 lines(s$DateTime, s$Sub_metering_3, col="blue")
 
-legend("topright",legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),col=c("black","red","blue"),cex=0.8)
-
+legend('topright',legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+       col=c("black", "red", "blue"),lty='solid')
 
 #Print
 dev.copy(png,filename="plot3.png",height=480, width=480,bg="white")
